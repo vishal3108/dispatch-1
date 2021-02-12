@@ -11,6 +11,11 @@ from dispatch.decorators import apply, counter, timer
 from dispatch.plugins import dispatch_workflow as workflow_plugin
 from dispatch.plugins.bases import WorkflowPlugin
 
+from .config import (
+    CAMUNDA_API_URL,
+)
+
+
 class WorkflowPlugin(WorkflowPlugin):
     title = "Workflow Plugin - Workflow Management"
     slug = "workflow"
