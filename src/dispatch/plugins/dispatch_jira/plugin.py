@@ -129,11 +129,9 @@ class JiraTicketPlugin(TicketPlugin):
     slug = "jira-ticket"
     description = "Uses Jira to help manage external tickets."
     version = jira_plugin.__version__
-
-    author = "Netflix"
-    author_url = "https://github.com/netflix/dispatch.git"
-
     _schema = None
+    author = "Nokia-IESP"
+    author_url = "https://nokiaiesp-dev.dyn.nesc.nokia.net/iesp/"
 
     def create(
         self,
