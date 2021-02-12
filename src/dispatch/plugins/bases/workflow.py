@@ -12,9 +12,15 @@ from dispatch.models import PluginOptionModel
 class WorkflowPlugin(Plugin):
     type = "workflow"
     _schema = PluginOptionModel
+    
 
-    def get_instance(self, workflow_id: str, instance_id: str, **kwargs):
-        raise NotImplementedError
+    
+    def create(self, items, **kwargs):
+        return "Conversation Created"
+    def add(self, items, **kwargs):
+        return "User Added"
+    def send(self, items, **kwargs):
+        return "Message sent"
 
-    def run(self, workflow_id: str, params: dict, **kwargs):
-        raise NotImplementedError
+
+
