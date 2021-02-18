@@ -59,8 +59,8 @@ class GoogleGmailEmailPlugin(EmailPlugin):
     description = "Uses Gmail to facilitate emails."
     version = google_gmail_plugin.__version__
 
-    author = "Netflix"
-    author_url = "https://github.com/netflix/dispatch.git"
+    author = "Nokia-IESP"
+    author_url = "https://nokiaiesp-dev.dyn.nesc.nokia.net/iesp/"
 
     def __init__(self):
         self.scopes = ["https://mail.google.com/"]
