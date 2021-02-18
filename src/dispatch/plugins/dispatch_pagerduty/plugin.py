@@ -22,8 +22,8 @@ log = logging.getLogger(__name__)
 class PagerDutyOncallPlugin(OncallPlugin):
     title = "PagerDuty Plugin - Oncall Management"
     slug = "pagerduty-oncall"
-    author = "Netflix"
-    author_url = "https://github.com/Netflix/dispatch"
+    author = "Nokia-IESP"
+    author_url = "https://nokiaiesp-dev.dyn.nesc.nokia.net/iesp/"
     description = "Uses PagerDuty to resolve and page oncall teams."
     version = pagerduty_oncall_plugin.__version__
 
