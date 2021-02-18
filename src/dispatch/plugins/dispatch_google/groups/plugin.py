@@ -120,8 +120,8 @@ class GoogleGroupParticipantGroupPlugin(ParticipantGroupPlugin):
     description = "Uses Google Groups to help manage participant membership."
     version = google_group_plugin.__version__
 
-    author = "Netflix"
-    author_url = "https://github.com/netflix/dispatch.git"
+    author = "Nokia-IESP"
+    author_url = "https://nokiaiesp-dev.dyn.nesc.nokia.net/iesp/"
 
     _schema = None
 
