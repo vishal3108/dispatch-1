@@ -30,8 +30,8 @@ class GoogleDriveStoragePlugin(StoragePlugin):
     description = "Uses Google Drive to help manage incident storage."
     version = google_drive_plugin.__version__
 
-    author = "Netflix"
-    author_url = "https://github.com/netflix/dispatch.git"
+    author = "Nokia-IESP"
+    author_url = "https://nokiaiesp-dev.dyn.nesc.nokia.net/iesp/"
 
     _schema = None
 
@@ -113,8 +113,8 @@ class GoogleDriveTaskPlugin(TaskPlugin):
     description = "Uses Google Drive to help manage incident tasks."
     version = google_drive_plugin.__version__
 
-    author = "Netflix"
-    author_url = "https://github.com/netflix/dispatch.git"
+    author = "Nokia-IESP"
+    author_url = "https://nokiaiesp-dev.dyn.nesc.nokia.net/iesp/"
 
     _schema = None
 
