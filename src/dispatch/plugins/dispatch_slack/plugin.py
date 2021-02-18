@@ -79,8 +79,8 @@ class SlackConversationPlugin(ConversationPlugin):
     version = slack_plugin.__version__
     events = slack_event_router
 
-    author = "Netflix"
-    author_url = "https://github.com/netflix/dispatch.git"
+    author = "Nokia-IESP"
+    author_url = "https://nokiaiesp-dev.dyn.nesc.nokia.net/iesp/"
 
     def __init__(self):
         self.client = create_slack_client()
@@ -193,8 +193,8 @@ class SlackContactPlugin(ContactPlugin):
     description = "Uses Slack to resolve contact information details."
     version = slack_plugin.__version__
 
-    author = "Netflix"
-    author_url = "https://github.com/netflix/dispatch.git"
+    author = "Nokia-IESP"
+    author_url = "https://nokiaiesp-dev.dyn.nesc.nokia.net/iesp/"
 
     def __init__(self):
         self.client = create_slack_client()
@@ -230,8 +230,8 @@ class SlackDocumentPlugin(DocumentPlugin):
     description = "Uses Slack as a document source."
     version = slack_plugin.__version__
 
-    author = "Netflix"
-    author_url = "https://github.com/netflix/dispatch.git"
+    author = "Nokia-IESP"
+    author_url = "https://nokiaiesp-dev.dyn.nesc.nokia.net/iesp/"
 
     def __init__(self):
         self.cachedir = os.path.dirname(os.path.realpath(__file__))
