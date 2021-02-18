@@ -51,8 +51,8 @@ class BasicAuthProviderPlugin(AuthenticationProviderPlugin):
     description = "Generic basic authentication provider."
     version = dispatch_plugin.__version__
 
-    author = "Netflix"
-    author_url = "https://github.com/netflix/dispatch.git"
+    author = "Nokia-IESP"
+    author_url = "https://nokiaiesp-dev.dyn.nesc.nokia.net/iesp/"
 
     def get_current_user(self, request: Request, **kwargs):
         authorization: str = request.headers.get("Authorization")
@@ -78,8 +78,8 @@ class PKCEAuthProviderPlugin(AuthenticationProviderPlugin):
     description = "Generic PCKE authentication provider."
     version = dispatch_plugin.__version__
 
-    author = "Netflix"
-    author_url = "https://github.com/netflix/dispatch.git"
+    author = "Nokia-IESP"
+    author_url = "https://nokiaiesp-dev.dyn.nesc.nokia.net/iesp/"
 
     def get_current_user(self, request: Request, **kwargs):
         credentials_exception = HTTPException(
@@ -130,8 +130,8 @@ class DispatchTicketPlugin(TicketPlugin):
     description = "Uses dispatch itself to create a ticket."
     version = dispatch_plugin.__version__
 
-    author = "Netflix"
-    author_url = "https://github.com/netflix/dispatch.git"
+    author = "Nokia-IESP"
+    author_url = "https://nokiaiesp-dev.dyn.nesc.nokia.net/iesp/"
 
     def create(
         self,
@@ -178,8 +178,8 @@ class DispatchDocumentResolverPlugin(DocumentResolverPlugin):
     description = "Uses dispatch itself to resolve incident documents."
     version = dispatch_plugin.__version__
 
-    author = "Netflix"
-    author_url = "https://github.com/netflix/dispatch.git"
+    author = "Nokia-IESP"
+    author_url = "https://nokiaiesp-dev.dyn.nesc.nokia.net/iesp/"
 
     def get(
         self, incident_type: str, incident_priority: str, incident_description: str, db_session=None
@@ -205,8 +205,8 @@ class DispatchContactPlugin(ContactPlugin):
     description = "Uses dispatch itself to resolve incident participants."
     version = dispatch_plugin.__version__
 
-    author = "Netflix"
-    author_url = "https://github.com/netflix/dispatch.git"
+    author = "Nokia-IESP"
+    author_url = "https://nokiaiesp-dev.dyn.nesc.nokia.net/iesp/"
 
     def get(self, email, db_session=None):
         return getattr(
@@ -222,8 +222,8 @@ class DispatchParticipantResolverPlugin(ParticipantPlugin):
     description = "Uses dispatch itself to resolve incident participants."
     version = dispatch_plugin.__version__
 
-    author = "Netflix"
-    author_url = "https://github.com/netflix/dispatch.git"
+    author = "Nokia-IESP"
+    author_url = "https://nokiaiesp-dev.dyn.nesc.nokia.net/iesp/"
 
     def get(
         self,
