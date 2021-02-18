@@ -19,7 +19,7 @@ log = logging.getLogger(__name__)
 class OpsGenieOncallPlugin(OncallPlugin):
     title = "OpsGenie Plugin - Oncall Management"
     slug = "opsgenie-oncall"
-    author = "stefanm8"
+    author = "Nokia-IESP"
     author_url = "https://github.com/Netflix/dispatch"
     description = "Uses Opsgenie to resolve and page oncall teams."
     version = __version__
